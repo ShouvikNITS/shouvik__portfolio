@@ -1,0 +1,59 @@
+.biodata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.biodata__title{
+    font-size: var(--size-3xl);
+}
+
+.biodata__subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-blue);
+    font-size: 1rem;
+    width: 100%;
+    height: 7vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.biodata__container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.biodata__sub-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    text-align: left;
+    border: 1px solid var(--clr-blue);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(226, 232, 240, .15);
+    transition: all 0.3s linear;
+}
+
+.biodata__sub-container:hover{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.biodata__menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 2rem 3rem;
+    font-weight: 500;
+}
