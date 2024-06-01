@@ -52,5 +52,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: .4px;
     
 }
