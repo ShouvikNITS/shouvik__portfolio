@@ -29,6 +29,7 @@
     background-color: rgba(226, 232, 240, .15);
     border: 1px solid var(--clr-blue);
     padding: 1rem;
+    resize: none;
     border-radius: 10px;
     transition: all .3s linear;
 }
