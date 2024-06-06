@@ -39,6 +39,10 @@
     backdrop-filter: blur(10px);
 }
 
+.contact__form-input::placeholder{
+    color: white;
+}
+
 .contact__column-1{
     padding: 1rem;
     width: 30rem;
@@ -86,6 +90,10 @@
 
 .contact__recent-subtitle{
     font-size: .8rem;
+}
+
+.contact__recent-subtitle-mail{
+    color: white;
 }
 
 .contact__clients{

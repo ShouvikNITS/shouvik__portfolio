@@ -1,0 +1,21 @@
+.contact__social-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    font-size: xx-large;
+    margin-top: -2rem;
+}
+
+.contact__social-items{
+    list-style: none;
+    background-color: transparent;
+}
+
+.contact__social-icons{
+    color: var(--clr-blue);
+    transition: all .3s linear;
+}
+
+.contact__social-icons:hover{
+    color: #66bfff;
+}

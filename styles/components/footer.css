@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.footer__title{
+    font-size: var(--size-3xl);
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__info{
+    color: red;
+    font-weight: 500;
+}
+
+.footer__copyright{
+    text-transform: uppercase;
+    font-weight: 600;
+    user-select: none;
+}
