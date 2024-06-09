@@ -7,7 +7,20 @@
     <title>Shouvik</title>
   </head>
   <body>
-    <!-- <img class="img__cover" src="./public/1920x1080-px-astronomy-detail-Hubble-NASA-outer-1486439-wallhere.com.jpg" alt=""> -->
+    <!-- <div class="cursor"></div>
+    <div class="cursor__dot"></div> -->
+    <section class="stars__bg1">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+  </section>
 
     <section class="header container">
       <nav>
@@ -114,7 +127,9 @@
         </ul>
       </nav>
       <!-- <p class="caution">Website Under Development</p> -->
-      <a class="resume btn" href="./public/Shouvik_Paul.pdf" download="">Resume</a>
+      <a class="resume btn" href="./public/Shouvik_Paul.pdf" download=""
+        >Resume</a
+      >
       <div class="header__text">
         <h1 class="header__title">Welcome</h1>
         <p class="header__line">This is</p>
@@ -123,9 +138,13 @@
 
       <img
         class="header__img"
-        src="./public/pxfuel.jpg"
+        src="./public/pxfuel.png"
         alt="Earth from the space"
       />
+    </section>
+    <section class="bg__img">
+      <!-- <img class="body__bg-img" src="./public/bg.jpg" alt=""> -->
+      <!-- <div class="bg-gradient"></div> -->
     </section>
     <section id="about" class="about container section">
       <h2 class="about__title">About Me</h2>
@@ -188,7 +207,10 @@
       <div class="about__description">
         <p>
           I am an Electronics and Communication Engineering Undergraduate at
-          <a class="about__description-link" href="https://www.nits.ac.in/" target="_blank"
+          <a
+            class="about__description-link"
+            href="https://www.nits.ac.in/"
+            target="_blank"
             >NIT Silchar</a
           >. I am learning Web Development and focusing on my problem solving
           skills.
@@ -426,10 +448,22 @@
       <h2 class="projects__title">Projects</h2>
       <div class="projects__container">
         <div class="projects__list">
-          <img src="https://res.cloudinary.com/dmgsgjyl9/image/upload/f_auto,q_auto/SWMA" alt="Smart Water Management App" class="projects__img">
+          <img
+            src="https://res.cloudinary.com/dmgsgjyl9/image/upload/f_auto,q_auto/SWMA"
+            alt="Smart Water Management App"
+            class="projects__img"
+          />
           <h5 class="projects__subtitle">Smart Water Management App</h5>
-          <p class="projects__description">A fully working prototype of an app, in figma, monitoring the usage of water, in household, thoughout the day</p>
-          <a href="https://www.figma.com/design/S0nFCc0FPmBReVIQb4f69s/Shouvik-Paul?node-id=0-1&t=C8bWUpGiIoEBm1sa-1" class="projects__btn btn" target="_blank">Visit</a>
+          <p class="projects__description">
+            A fully working prototype of an app, in figma, monitoring the usage
+            of water, in household, thoughout the day
+          </p>
+          <a
+            href="https://www.figma.com/design/S0nFCc0FPmBReVIQb4f69s/Shouvik-Paul?node-id=0-1&t=C8bWUpGiIoEBm1sa-1"
+            class="projects__btn btn"
+            target="_blank"
+            >Visit</a
+          >
         </div>
         <!-- <div class="projects__list">
           <img src="./public/Screenshot 2024-06-06 194805.jpg" alt="" class="projects__img">
@@ -438,12 +472,19 @@
           <a href="#" class="projects__btn btn">Visit</a>
         </div> -->
         <div class="projects__list">
-          <img src="https://res.cloudinary.com/dmgsgjyl9/image/upload/f_auto,q_auto/S_Portfolio" alt="Space Portfolio" class="projects__img">
+          <img
+            src="https://res.cloudinary.com/dmgsgjyl9/image/upload/f_auto,q_auto/S_Portfolio"
+            alt="Space Portfolio"
+            class="projects__img"
+          />
           <h5 class="projects__subtitle">Space Themed Portfolio</h5>
           <p class="projects__description">Happy Scrolling!</p>
           <a href="#about" class="projects__btn btn">Visit</a>
         </div>
       </div>
+      <!-- <div class="projects__bg-container">
+        <video src="./public/cards-video.webm" alt="black hole" class="projects__bg" preload="auto" loop></video>
+      </div> -->
     </section>
     <section id="biodata" class="biodata container section">
       <h2 class="biodata__title">Bio Data</h2>
@@ -486,26 +527,91 @@
       <div class="contact__container">
         <div class="contact__column-1">
           <form class="contact__form">
-            <input class="contact__form-input" type="text" name="name" placeholder="Your Full Name" required=""/>
-            <input class="contact__form-input" type="email" name="email" placeholder="Your Email" required=""/>
-            <textarea class="contact__form-input" name="message" rows="6" placeholder="Write Your Message" required=""></textarea>
+            <input
+              class="contact__form-input"
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required=""
+            />
+            <input
+              class="contact__form-input"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required=""
+            />
+            <textarea
+              class="contact__form-input"
+              name="message"
+              rows="6"
+              placeholder="Write Your Message"
+              required=""
+            ></textarea>
             <button type="submit" class="contact__ form-btn btn">Submit</button>
           </form>
         </div>
         <div class="contact__column-2">
           <div class="contact__sub-container">
             <div class="contact__recent">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="contact__option-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="contact__option-icon"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
+                ></path>
+                <path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
+              </svg>
               <h5 class="contact__recent-title">Email</h5>
-              <a href="mailto:shouvikpaul04@gmail.com" target="_blank" class="contact__recent-subtitle-mail"><p class="contact__recent-subtitle">Mail me</p></a>
+              <a
+                href="mailto:shouvikpaul04@gmail.com"
+                target="_blank"
+                class="contact__recent-subtitle-mail"
+                ><p class="contact__recent-subtitle">Mail me</p></a
+              >
             </div>
             <div class="contact__recent">
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="contact__option-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="contact__option-icon"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
               <h5 class="contact__recent-title">Call</h5>
               <p class="contact__recent-subtitle">Outside working hours</p>
             </div>
             <div class="contact__recent">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="contact__option-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path></svg>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="contact__option-icon"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                ></path>
+              </svg>
               <h5 class="contact__recent-title">Whatsapp</h5>
               <p class="contact__recent-subtitle">Available anytime</p>
             </div>
@@ -514,7 +620,8 @@
             <h5 class="contact__clients-subtitle">For</h5>
             <h5 class="contact__clients-title">Clients and Learners</h5>
             <p class="contact__clients-description">
-              Looking for any kind of help in your website<br>feel free to reach out
+              Looking for any kind of help in your website<br />feel free to
+              reach out
             </p>
             <button class="contact__clients-btn btn">Reach Out</button>
           </div>
@@ -522,28 +629,102 @@
       </div>
       <div class="contact__social">
         <ul class="contact__social-list">
-          <li class="contact__social-items"><a href="https://www.facebook.com/profile.php?id=61550671079083&mibextid=ZbWKwL" target="_blank">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" class="contact__social-icons" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M23.00025,0 L1.0005,0 C0.44775,0 0,0.44775 0,0.99975 L0,23.00025 C0,23.55225 0.44775,24 1.0005,24 L12.75,24 L12.75,15 L9.75,15 L9.75,11.25 L12.75,11.25 L12.75,8.25 C12.75,5.15025 14.71275,3.62475 17.478,3.62475 C18.8025,3.62475 19.941,3.72375 20.2725,3.76725 L20.2725,7.00725 L18.35475,7.008 C16.851,7.008 16.5,7.72275 16.5,8.77125 L16.5,11.25 L20.25,11.25 L19.5,15 L16.5,15 L16.56,24 L23.00025,24 C23.55225,24 24,23.55225 24,23.00025 L24,0.99975 C24,0.44775 23.55225,0 23.00025,0"></path></svg>
-          </a></li>
-          <li class="contact__social-items"><a href="https://www.linkedin.com/in/shouvikpaul-nits" target="_blank">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" class="contact__social-icons" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path></svg>
-          </a></li>
-          <li class="contact__social-items"><a href="https://github.com/ShouvikNITS" target="_blank">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" class="contact__social-icons" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-          </a></li>
-          <li class="contact__social-items"><a href="https://www.instagram.com/__s.h.o.u.v.i.k__?igsh=ZGxldW00MXg0cXR3" target="_blank">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" class="contact__social-icons" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg>
-          </a></li>
+          <li class="contact__social-items">
+            <a
+              href="https://www.facebook.com/profile.php?id=61550671079083&mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                class="contact__social-icons"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M23.00025,0 L1.0005,0 C0.44775,0 0,0.44775 0,0.99975 L0,23.00025 C0,23.55225 0.44775,24 1.0005,24 L12.75,24 L12.75,15 L9.75,15 L9.75,11.25 L12.75,11.25 L12.75,8.25 C12.75,5.15025 14.71275,3.62475 17.478,3.62475 C18.8025,3.62475 19.941,3.72375 20.2725,3.76725 L20.2725,7.00725 L18.35475,7.008 C16.851,7.008 16.5,7.72275 16.5,8.77125 L16.5,11.25 L20.25,11.25 L19.5,15 L16.5,15 L16.56,24 L23.00025,24 C23.55225,24 24,23.55225 24,23.00025 L24,0.99975 C24,0.44775 23.55225,0 23.00025,0"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contact__social-items">
+            <a
+              href="https://www.linkedin.com/in/shouvikpaul-nits"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                class="contact__social-icons"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contact__social-items">
+            <a href="https://github.com/ShouvikNITS" target="_blank">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 496 512"
+                height="1em"
+                width="1em"
+                class="contact__social-icons"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contact__social-items">
+            <a
+              href="https://www.instagram.com/__s.h.o.u.v.i.k__?igsh=ZGxldW00MXg0cXR3"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                class="contact__social-icons"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                ></path>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
     <footer class="footer container">
       <h2 class="footer__title">Thanks for Visiting</h2>
+      <a href="#" class="top"><p>Back to Top</p></a>
       <div class="copyright">
-        <a href="https://github.com/ShouvikNITS/shouvik__portfolio" target="_blank"><small class="footer__info">srcCode</small></a>
+        <a
+          href="https://github.com/ShouvikNITS/shouvik__portfolio"
+          target="_blank"
+          ><small class="footer__info">srcCode</small></a
+        >
         <small class="footer__copyright">©&nbsp; Shouvik 2024</small>
       </div>
-      
     </footer>
 
     <script type="module" src="./src/main.js"></script>

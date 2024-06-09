@@ -65,3 +65,10 @@
     bottom: 10%;
     margin: .5rem 0;
 }
+
+/* .projects__bg-container{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    background: radial-gradient(circle, transparent 20%, #000000 100%);
+} */

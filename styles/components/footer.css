@@ -12,6 +12,14 @@
     margin: 2rem;
 }
 
+.top{
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: -18px;
+    font-size: .7rem;
+    font-weight: 540;
+}
+
 .copyright{
     display: flex;
     flex-direction: column;
