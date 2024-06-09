@@ -41,12 +41,11 @@
     border: 1px solid var(--clr-blue);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: rgba(226, 232, 240, .15);
+    box-shadow: 0 0 1.5rem var(--clr-blue);
     transition: all 0.3s linear;
 }
 
 .biodata__sub-container:hover{
-    background-color: transparent;
     backdrop-filter: blur(10px);
 }
 

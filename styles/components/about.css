@@ -93,7 +93,7 @@
     align-items: center;
     gap: .2rem;
     background: transparent;
-    background: radial-gradient(circle, transparent 20%, #000000 100%);
+    background: radial-gradient(circle, transparent 10%, #000000 100%);
     /* transition: width 10s; */
 }
 

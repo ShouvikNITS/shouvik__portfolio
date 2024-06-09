@@ -26,7 +26,7 @@
 }
 
 .contact__form-input{
-    background-color: rgba(226, 232, 240, .15);
+    background-color: transparent;
     border: 1px solid var(--clr-blue);
     padding: 1rem;
     resize: none;
@@ -36,7 +36,7 @@
 
 .contact__form-input:hover{
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .contact__form-input::placeholder{
@@ -107,13 +107,12 @@
     gap: .5rem;
     border: 1px solid var(--clr-blue);
     border-radius: 10px;
-    background-color: rgba(226, 232, 240, .15);
     transition: all .3s linear;
 }
 
 .contact__clients:hover{
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .contact__clients-title{

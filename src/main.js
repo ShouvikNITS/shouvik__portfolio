@@ -5,6 +5,7 @@ import '../styles/components/header.css';
 import '../styles/components/bg.css';
 import '../styles/components/stars-header.css';
 import '../styles/components/nav.css';
+import '../styles/components/scroll.css';
 import '../styles/components/about.css';
 import '../styles/components/skills.css';
 import '../styles/components/projects.css';

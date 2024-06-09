@@ -33,6 +33,11 @@
     padding: 1.5rem;
     position: relative;
     box-shadow: 0 0 1.5rem var(--clr-blue);
+    transition: all .3s linear;
+}
+
+.projects__list:hover{
+    backdrop-filter: blur(5px);
 }
 
 .projects__img{
@@ -66,9 +71,3 @@
     margin: .5rem 0;
 }
 
-/* .projects__bg-container{
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-    background: radial-gradient(circle, transparent 20%, #000000 100%);
-} */

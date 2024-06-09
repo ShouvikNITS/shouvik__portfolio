@@ -1,0 +1,55 @@
+.click-scroll{
+    position: absolute;
+    top: 790px;
+    left: 725px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-down{
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: scroll 3s linear infinite;
+}
+
+.a1{
+    color: transparent;
+    width: 5rem;
+    margin-bottom: -50px;
+    animation: glow 6s linear infinite;
+}
+
+.a2{
+    color: transparent;
+    width: 5rem;
+    margin-bottom: -50px;
+    animation: glow 6s linear infinite 2s;
+}
+
+.a3{
+    color: transparent;
+    width: 5rem;
+    margin-bottom: -50px;
+    animation: glow 6s linear infinite 4s;
+}
+
+@keyframes scroll {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes glow {
+    0%, 100%{
+        color: transparent;
+    }
+    50%{
+        color: red;
+    }
+}

@@ -66,3 +66,15 @@
     -webkit-text-stroke-width: .3px;
     
 }
+
+.head-1{
+    position: absolute;
+    left: 610px;
+    top: 730px;
+}
+
+.head-2{
+    position: absolute;
+    left: 720px;
+    top: 760px;
+}
