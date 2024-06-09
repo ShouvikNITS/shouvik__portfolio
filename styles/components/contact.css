@@ -27,6 +27,7 @@
 
 .contact__form-input{
     background-color: transparent;
+    color: white;
     border: 1px solid var(--clr-blue);
     padding: 1rem;
     resize: none;
