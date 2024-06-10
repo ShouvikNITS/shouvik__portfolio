@@ -1,7 +1,13 @@
+.small__head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 31rem;
+}
+
 .click-scroll{
-    position: absolute;
-    top: 790px;
-    left: 725px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -4,10 +4,9 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: 12rem;
-    margin-bottom: 5rem;
     padding: 3rem;
     min-height: 20rem;
+    position: relative;
 
 }
 
@@ -120,8 +119,7 @@
 .skills__click-text{
     position: absolute;
     font-weight: 900;
-    top: 137rem;
-    left: 50hw;
+    top: 21rem;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 1s linear;
