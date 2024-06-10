@@ -6,7 +6,7 @@
     gap: 3rem;
     margin-top: 12rem;
     margin-bottom: 5rem;
-    padding: 4rem;
+    padding: 3rem;
     min-height: 20rem;
 
 }
@@ -120,7 +120,7 @@
 .skills__click-text{
     position: absolute;
     font-weight: 900;
-    top: 138rem;
+    top: 137rem;
     left: 50hw;
     text-transform: uppercase;
     cursor: pointer;

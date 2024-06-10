@@ -15,8 +15,8 @@ import '../styles/components/social.css';
 import '../styles/components/footer.css';
 import '../styles/style.css';
 
+import navbar from './utils/nav';
 import skillsAnimation from './utils/skills';
-import cursor from './utils/cursor';
 
+navbar();
 skillsAnimation();
-cursor();
