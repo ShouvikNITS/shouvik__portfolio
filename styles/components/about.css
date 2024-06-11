@@ -80,13 +80,13 @@
     height: 35rem;
     z-index: -1;
     /* top: 65rem; */
-    right: 0;
+    right: -8rem;
 }
 
 .about__pp{
     position: absolute;
-    top: 13rem;
-    right: 11rem;
+    top: 12.5rem;
+    right: 2.5rem;
     border-radius: 50%;
     width: 25rem;
     height: 25rem;
@@ -97,21 +97,12 @@
     align-items: center;
     gap: .2rem;
     background: transparent;
-    background: radial-gradient(circle, transparent 10%, #000000 100%);
-    /* transition: width 10s; */
+    mask-image: radial-gradient(circle, #ffffff 35%, transparent 70%);
+    border: 5px solid white;
+    transition: all 3s linear;
 }
 
 .about__pp-img{
     z-index: -1;
-}
-
-.about__border{
-    position: relative;
-    width: 0;
-    transition: width 1s;
-}
-
-.about__pp:hover .about__border{
-    border: 2px solid var(--clr-blue);
-    width: 100%;
+    scale: 1.5;
 }
