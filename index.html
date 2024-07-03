@@ -21,9 +21,53 @@
       <span></span>
       <span></span>
     </section>
+    <!--Mobile Navigation-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About Me</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#biodata">Biodata</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact Me</a>
+          </li>
+          <li>
+            <a
+              class="mobile-nav__btn btn"
+              href="https://shouvik-portfolio.vercel.app/Shouvik_Paul.pdf"
+              download="Shouvik"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="header__bars__mobile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <!--End Mobile Navigation-->
 
     <section class="header container">
-      <nav>
+      <nav class="nav__main">
         <ul class="nav__menu">
           <li>
             <a href="#about">
@@ -133,6 +177,19 @@
         download="Shouvik"
         >Resume</a
       >
+      <button class="header__bars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
       <div class="header__text">
         <h1 class="header__title">Welcome</h1>
         <p class="header__line">This is</p>
@@ -586,13 +643,13 @@
               required=""
             />
             <textarea
-              class="contact__form-input"
+              class="contact__form-input msg"
               name="message"
               rows="6"
               placeholder="Write Your Message"
               required=""
             ></textarea>
-            <button type="submit" class="contact__ form-btn btn">Submit</button>
+            <button type="submit" class="contact__form-btn btn">Submit</button>
           </form>
         </div>
         <div class="contact__column-2">

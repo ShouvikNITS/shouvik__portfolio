@@ -38,7 +38,7 @@ span::before{
         opacity: .8;   
     }
     100%{
-        transform: rotate(315deg) translateX(-600px);
+        transform: rotate(315deg) translateX(-90px);
         opacity: 0;
     }
 }
@@ -93,7 +93,7 @@ span:nth-child(6)
 }
 span:nth-child(7)
 {
-    top: 300px;
+    top: 200px;
     right: 0;
     left: initial;
     animation-delay: 1.2s;
@@ -123,3 +123,86 @@ span:nth-child(10)
     animation-delay: 2.75s;
     animation-duration: 2.25s;
 }
+
+/* xs */
+@media (min-width: 475px) {
+    @keyframes animate {
+        0%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        70%{
+            opacity: .8;   
+        }
+        100%{
+            transform: rotate(315deg) translateX(-80px);
+            opacity: 0;
+        }
+    }
+}
+/* sm */
+@media (min-width: 640px) {    
+    @keyframes animate {
+        0%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        70%{
+            opacity: .8;   
+        }
+        100%{
+            transform: rotate(315deg) translateX(-250px);
+            opacity: 0;
+        }
+    }
+}
+/* md */
+@media (min-width: 768px) {    
+    @keyframes animate {
+        0%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        70%{
+            opacity: .8;   
+        }
+        100%{
+            transform: rotate(315deg) translateX(-350px);
+            opacity: 0;
+        }
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    @keyframes animate {
+        0%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        70%{
+            opacity: .8;   
+        }
+        100%{
+            transform: rotate(315deg) translateX(-600px);
+            opacity: 0;
+        }
+    }
+}
+/* xl */
+@media (min-width: 1280px) {    
+    @keyframes animate {
+        0%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        70%{
+            opacity: .8;   
+        }
+        100%{
+            transform: rotate(315deg) translateX(-600px);
+            opacity: 0;
+        }
+    }
+}
+/* 2xl */
+/* @media (min-width: 1536px) {} */

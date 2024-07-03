@@ -1,47 +1,71 @@
-.nav__menu{
-    display: flex;
-    gap: 1rem;
-    padding: 2px;
-    position: fixed;
-    top: 90%;
-    left: 42%;
-    list-style: none;
-    backdrop-filter: blur(10px);
-    /* border: 1px solid red; */
-    background-color: rgba(226, 232, 240, .15);
-    border-radius: 200px;
-    z-index: 100;
-}
 
-.nav__btn{
-    display: block;
-    width: var(--size-4xl);
-    height: var(--size-4xl);
-    color: var(--clr-light);
-    /* border: 1px solid green; */
-    border-radius: 200px;
-    padding: 5px;
-    transition: all .3s;
-}
 
-.nav__btn:hover{
-    background-color: var(--clr-blue);
-}
-
-.active{
-    background: var(--clr-blue);
-    border-radius: 200px;
-    animation: swing 3s linear infinite;
-}
-
-@keyframes swing {
-    0%,50%,100%{
-        transform: rotate(0deg);
+/* xs */
+/* @media (min-width: 475px) {} */
+/* sm */
+/* @media (min-width: 640px) {} */
+/* md */
+@media (min-width: 768px) {
+    .nav__main{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        right: 50%;
+        z-index: 100;
     }
-    25%{
-        transform: rotate(-20deg);
+    
+    .nav__menu{
+        display: flex;
+        gap: 1rem;
+        padding: 2px;
+        
+        /* left: 42%; */
+        list-style: none;
+        backdrop-filter: blur(10px);
+        /* border: 1px solid red; */
+        background-color: rgba(226, 232, 240, .15);
+        border-radius: 200px;
+        
     }
-    75%{
-        transform: rotate(+20deg);
+    
+    .nav__btn{
+        display: block;
+        width: var(--size-4xl);
+        height: var(--size-4xl);
+        color: var(--clr-light);
+        /* border: 1px solid green; */
+        border-radius: 200px;
+        padding: 5px;
+        transition: all .3s;
+    }
+    
+    .nav__btn:hover{
+        background-color: var(--clr-blue);
+    }
+    
+    .active{
+        background: var(--clr-blue);
+        border-radius: 200px;
+        animation: swing 3s linear infinite;
+    }
+    
+    @keyframes swing {
+        0%,50%,100%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(-20deg);
+        }
+        75%{
+            transform: rotate(+20deg);
+        }
     }
 }
+/* lg */
+/* @media (min-width: 1024px) {} */
+/* xl */
+/* @media (min-width: 1280px) {} */
+/* 2xl */
+/* @media (min-width: 1536px) {} */

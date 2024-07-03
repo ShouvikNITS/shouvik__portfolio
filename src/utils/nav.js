@@ -1,6 +1,6 @@
 const navbar = () => {
     let sections = document.querySelectorAll('section');
-    let navBtn = document.querySelectorAll('nav ul li a');
+    let navBtn = document.querySelectorAll('.nav__main ul li a');
 
     window.onscroll = () => {
         sections.forEach(sec => {
@@ -12,7 +12,7 @@ const navbar = () => {
             if(top >= offset && top < offset + height) {
                 navBtn.forEach(btn => {
                     btn.classList.remove('active');
-                    document.querySelector('nav ul li a[href*='+id+']').classList.add('active');
+                    document.querySelector('.nav__main ul li a[href*='+id+']').classList.add('active');
                 });
             };
         });
