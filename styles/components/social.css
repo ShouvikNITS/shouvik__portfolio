@@ -1,7 +1,7 @@
 .contact__social-list{
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 3rem;
     font-size: xx-large;
     margin-top: -2rem;
 }
