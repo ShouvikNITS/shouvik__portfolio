@@ -130,7 +130,8 @@
     }
 
     .bg-gradient{
-        top: 25rem;
+        top: 27rem;
+        height: 6rem;
         background: linear-gradient(to top, transparent, #000000 50%);
     }
     
@@ -165,7 +166,7 @@
     
     .bg-gradient{
         position: absolute;
-        top: 35rem;
+        top: 37rem;
         left: 0;
         width: 100%;
         height: 6rem;
@@ -229,7 +230,7 @@
     
     .bg-gradient{
         position: absolute;
-        top: 37rem;
+        top: 40rem;
         left: 0;
         width: 100%;
         height: 10rem;

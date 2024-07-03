@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     margin: .5rem;
     width: 10rem;
     height: 10rem;
@@ -108,19 +109,45 @@
     margin-top: 0;
 }
 
-.skills__click-text{
+.skills__click-text {
     position: absolute;
-    font-weight: 900;
-    margin: auto;
-    font-size: 0.7rem;
-    top: 43vh;
-    text-transform: uppercase;
+    width: 2rem;
+    height: 2rem;
+    background-color: #dc2626;
+    border-radius: 50%;
     cursor: pointer;
-    transition: all 1s linear;
+    z-index: 10;
+}
+
+.skills__click-text:before,
+.skills__click-text:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid 2px #dc2626;
+    border-radius: 50%;
+}
+
+.skills__click-text:before {
+    animation: ripple 2s linear infinite;
+}
+
+.skills__click-text:after {
+    animation: ripple 2s 2s linear infinite;
 }
 
 .skills__click-text.onclick{
     display: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 .skills__parent{
@@ -234,6 +261,7 @@ small{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         margin: .5rem;
         width: 10rem;
         height: 10rem;
@@ -313,19 +341,45 @@ small{
         margin-top: 0;
     }
     
-    .skills__click-text{
+    .skills__click-text {
         position: absolute;
-        font-weight: 900;
-        margin: auto;
-        font-size: 0.8rem;
-        top: 42vh;
-        text-transform: uppercase;
+        width: 2rem;
+        height: 2rem;
+        background-color: #dc2626;
+        border-radius: 50%;
         cursor: pointer;
-        transition: all 1s linear;
+        z-index: 10;
     }
     
+    .skills__click-text:before,
+    .skills__click-text:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: solid 2px #dc2626;
+        border-radius: 50%;
+    }
+    
+    .skills__click-text:before {
+        animation: ripple 2s linear infinite;
+    }
+    
+    .skills__click-text:after {
+        animation: ripple 2s 2s linear infinite;
+    }
+
     .skills__click-text.onclick{
         display: none;
+    }
+    
+    @keyframes ripple {
+        to {
+            transform: scale(2);
+            opacity: 0;
+        }
     }
     
     .skills__parent{
@@ -517,21 +571,6 @@ small{
         margin-top: 0;
     }
     
-    .skills__click-text{
-        position: absolute;
-        font-weight: 900;
-        margin: auto;
-        font-size: 0.8rem;
-        top: 42.5vh;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 1s linear;
-    }
-    
-    .skills__click-text.onclick{
-        display: none;
-    }
-    
     .skills__parent{
         display: flex;
         flex-direction: column;
@@ -718,21 +757,6 @@ small{
         box-shadow: 0 0 1.5rem #4ade80, inset 0 0 1.5rem #4ade80;
     }
     
-    .skills__click-text{
-        position: absolute;
-        font-weight: 900;
-        margin: auto;
-        font-size: 0.8rem;
-        top: 23vh;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 1s linear;
-    }
-    
-    .skills__click-text.onclick{
-        display: none;
-    }
-    
     .skills__parent{
         display: flex;
         flex-direction: row;
@@ -917,21 +941,6 @@ small{
         box-shadow: 0 0 1.5rem #4ade80, inset 0 0 1.5rem #4ade80;
     }
     
-    .skills__click-text{
-        position: absolute;
-        font-weight: 900;
-        margin: auto;
-        font-size: var(--size-xs);
-        top: 34vh;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 1s linear;
-    }
-    
-    .skills__click-text.onclick{
-        display: none;
-    }
-    
     .skills__parent{
         display: flex;
         flex-direction: row;
@@ -1073,6 +1082,9 @@ small{
     
     
     .circle2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 13rem;
         height: 13rem;
         border-top: 1rem solid #7dd3fc;
@@ -1116,20 +1128,6 @@ small{
         box-shadow: 0 0 1.5rem #4ade80, inset 0 0 1.5rem #4ade80;
     }
     
-    .skills__click-text{
-        position: absolute;
-        font-weight: 900;
-        margin: auto;
-        font-size: var(--size-sm);
-        top: 48vh;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 1s linear;
-    }
-    
-    .skills__click-text.onclick{
-        display: none;
-    }
     
     .skills__parent{
         display: flex;
